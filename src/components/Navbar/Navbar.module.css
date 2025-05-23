@@ -1,0 +1,123 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 64px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toggleBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.toggleBtn:hover {
+  color: #007bff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  margin-right: 2rem;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  color: #333;
+  user-select: none;
+  outline: none;
+}
+
+.navItem:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+.navItem:focus {
+  background-color: #f8f9fa;
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
+}
+
+.navItem.active {
+  background-color: #e9ecef;
+  color: #007bff;
+}
+
+.navIcon {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.navLabel {
+  font-weight: 500;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userName {
+  font-weight: 500;
+  color: #333;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .navItems {
+    display: none;
+  }
+  
+  .logo {
+    margin-right: 1rem;
+  }
+} 

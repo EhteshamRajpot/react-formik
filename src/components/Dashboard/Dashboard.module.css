@@ -1,0 +1,34 @@
+.dashboard {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+  margin-top: 64px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  width: calc(100% - 80px);
+  margin-left: 80px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main.sidebarOpen {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .main.sidebarOpen {
+    width: 100%;
+    margin-left: 0;
+  }
+} 

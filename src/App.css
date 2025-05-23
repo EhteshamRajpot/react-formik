@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .App-logo {
@@ -19,8 +23,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  padding-top: 50px;
   color: white;
 }
 
@@ -34,5 +38,37 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #333;
+  position: relative;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    grid-template-columns: 1fr;
   }
 }
