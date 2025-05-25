@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import FamilyForm from './pages/FamilyForm';
 import Dashboard from './components/Dashboard/Dashboard';
 import FamilyRegister from './components/registrationforms/FamilyRegister';
 
